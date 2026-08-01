@@ -1,0 +1,228 @@
+<?php require_once 'cms_helper.php'; ?>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أطلس مالتي ميديا للإنتاج - السمعي البصري للطاقة المتجددة ونجاعة الطاقة بالمغرب</title>
+    <meta name="description" content="إنتاج سمعي بصري متخصص في الطاقة المتجددة ونجاعة الطاقة بالمغرب. مكاتبنا بالرباط والدار البيضاء.">
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="index-ar.php" class="logo-wrapper">
+                <img src="assets/logos/Logo (AMP).png" alt="Atlas Multimedia Productions" class="logo-img">
+                <div class="logo-text">ATLAS<span>MULTIMEDIA</span></div>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Menu" id="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="index-ar.php" class="active">الرئيسية</a></li>
+                    <li><a href="services-ar.php">خدماتنا</a></li>
+                    <li><a href="portfolio-ar.php">أعمالنا</a></li>
+                    <li><a href="about-ar.php">من نحن</a></li>
+                    <li><a href="blog-ar.php">المدونة</a></li>
+                    <li><a href="contact-ar.php" class="btn btn-primary" style="padding: 8px 20px; font-size: 0.9rem; color: #050807;">طلب تقدير تكلفة</a></li>
+                    <li class="lang-switcher">
+                        <button class="lang-btn" aria-label="اللغة"><i class="fa-solid fa-globe"></i> AR <i class="fa-solid fa-chevron-down"></i></button>
+                        <div class="lang-dropdown">
+                            <a href="index.php">English</a>
+                            <a href="index-fr.php">Français</a>
+                            <a href="index-ar.php" class="ar-font">العربية</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Video Section -->
+    <section class="hero">
+        <div class="hero-video-container">
+            <video class="hero-video" autoplay muted loop playsinline>
+                <source src="assets/videos/energy_transition_reel.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="container hero-split-container">
+            <div class="hero-content">
+                <span class="section-subtitle" style="animation: fadeInUp 0.8s ease forwards;">متخصص الإنتاج السمعي البصري للمؤسسات</span>
+                <h1 class="fade-in-up">من صناع قصص إلى <br><span class="text-gradient">صناع طاقة</span></h1>
+                <p class="fade-in-up">منذ 8 سنوات، نجسد ما لا يرى. اليوم، نضع خبرتنا في خدمة الانتقال الطاقي والاستدامة من خلال تحويل بيانات الطاقة النظيفة إلى سرديات بصرية آسرة.</p>
+                <div class="hero-ctas">
+                    <a href="contact-ar.php" class="btn btn-primary">تحدث مع خبير <i class="fa-solid fa-arrow-left" style="margin-right: 8px;"></i></a>
+                    <a href="portfolio-ar.php" class="btn btn-secondary">اكتشف مشاريعنا</a>
+                </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="counters-section">
+        <div class="container counters-grid">
+            <div class="counter-card">
+                <h3>8+</h3>
+                <p>سنوات من الخبرة</p>
+            </div>
+            <div class="counter-card">
+                <h3>150+</h3>
+                <p>مشروع سمعي بصري</p>
+            </div>
+            <div class="counter-card">
+                <h3>2</h3>
+                <p>مكتبان (الرباط والدار البيضاء)</p>
+            </div>
+            <div class="counter-card">
+                <h3>100%</h3>
+                <p>التزام بالانتقال الطاقي والاستدامة</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pitch Section -->
+    <section class="section-padding">
+        <div class="container about-split">
+            <div>
+                <span class="section-subtitle">لماذا هذا التوجه؟</span>
+                <h2 style="font-size: 2.2rem; margin-bottom: 20px;">ابتكارك البيئي يستحق تواصلًا متميزًا</h2>
+                <p style="color: var(--text-muted); margin-bottom: 20px;">
+                    إن الانتقال البيئي والتكنولوجيا النظيفة لا يقتصران على الأسلاك والكيلوواطات فحسب. بل يتطلبان تغييرًا سلوكيًا عميقًا، وثقة من المستثمرين، وفهمًا عامًا قويًا.
+                </p>
+                <p style="color: var(--text-muted); margin-bottom: 30px;">
+                    نحن نردم الفجوة بين التميز الهندسي والتفاعل الإنساني. نمنح توفير الطاقة حياة، وننتج أفلامًا وثائقية مقنعة للفوز بالمنح والمستثمرين، وننظم فعاليات لا تُنسى.
+                </p>
+                <a href="about-ar.php" class="btn btn-secondary">رؤيتنا</a>
+            </div>
+            <div class="about-img-box">
+                <video autoplay muted loop playsinline style="border-radius: var(--border-radius); width: 100%; height: 100%; object-fit: cover;">
+                    <source src="assets/videos/VID-20241130-WA0006 (Ongoing Conference).mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Liaison Section -->
+    <section class="section-padding" style="background-color: var(--bg-surface-elevated); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+        <div class="container" style="max-width: 900px; text-align: center;">
+            <span class="section-subtitle">التنسيق بالرباط والتنفيذ المحلي</span>
+            <h2 style="font-size: 2.2rem; margin-bottom: 20px;">إنتاج سمعي بصري متكامل للشركاء الأجانب وخارج العاصمة دون عناء التنقل</h2>
+            <p style="color: var(--text-muted); margin-bottom: 24px; font-size: 1.1rem;">
+                تتمركز المقرات الرئيسية للوزارات الحكومية، السفارات، المنظمات غير الحكومية والمؤسسات العمومية في مدينة الرباط. وبصفتنا متخصصين محليين في الإنتاج السمعي البصري المؤسسي بالعاصمة، فإننا ندير بالكامل كافة الإجراءات الإدارية، وتراخيص التصوير الرسمية (من المركز السينمائي المغربي)، وتصاريح الأمن، والتجهيزات اللوجستية الميدانية.
+            </p>
+            <p style="color: var(--text-muted); margin-bottom: 30px;">
+                لن تكونوا بحاجة لإرسال طواقم إنتاجكم أو مديري مشاريعكم إلى الرباط. نحن نقوم بالتنسيق الكامل على الأرض ونوفر لكم بثًا مباشرًا لغرفة المراقبة وأدوات التعاون الفوري لتتمكنوا من متابعة وتوجيه سير العمل عن بعد بكل أريحية وبثقة تامة.
+            </p>
+            <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;">
+                <div style="display: flex; align-items: center; gap: 8px; color: var(--primary); font-weight: 600;"><i class="fa-solid fa-file-signature"></i> التراخيص الرسمية ورخص CCM</div>
+                <div style="display: flex; align-items: center; gap: 8px; color: var(--primary); font-weight: 600;"><i class="fa-solid fa-lock"></i> الموافقات والتصاريح الأمنية</div>
+                <div style="display: flex; align-items: center; gap: 8px; color: var(--primary); font-weight: 600;"><i class="fa-solid fa-tower-broadcast"></i> بث مباشر وتوجيه عن بعد</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Three Main Services Teaser -->
+    <section class="section-padding" style="background-color: var(--bg-surface);">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-subtitle">أنشطتنا</span>
+                <h2 class="section-title">ثلاثة أقطاب خدمات سمعية بصرية متخصصة</h2>
+                <p class="section-desc">حلول تقنية متطورة لإبراز مشاريعك المستدامة من الفكرة إلى البث.</p>
+            </div>
+            <div class="grid-3">
+                <!-- Service 1 -->
+                <div class="glass-card service-card">
+                    <div class="service-icon"><i class="fa-solid fa-photo-film"></i></div>
+                    <h3>حملات الوسائط المتعددة</h3>
+                    <p>إعلانات تلفزيونية، فيديوهات قصيرة للشبكات الاجتماعية (9:16)، أفلام وثائقية مؤسسية قصيرة، وبودكاست للشركات مخصصة لقطاع البيئة.</p>
+                    <a href="services-ar.html#campagnes" class="learn-more">اقرأ المزيد <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+                <!-- Service 2 -->
+                <div class="glass-card service-card">
+                    <div class="service-icon"><i class="fa-solid fa-people-group"></i></div>
+                    <h3>الفعاليات والمنتديات</h3>
+                    <p>تنظيم كامل للمعارض المهنية، ومنتديات نجاعة الطاقة، والويبينار التفاعلي، والبث المباشر متعدد الكاميرات.</p>
+                    <a href="services-ar.html#evenements" class="learn-more">اقرأ المزيد <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+                <!-- Service 3 -->
+                <div class="glass-card service-card">
+                    <div class="service-icon"><i class="fa-solid fa-tower-broadcast"></i></div>
+                    <h3>التصوير والمحتوى الرقمي</h3>
+                    <p>تغطية سمعية بصرية شاملة للفعاليات العامة والإدارية، وسلاسل ويب تعليمية، ودروس مصورة، وإطلاق المنتجات الصديقة للبيئة.</p>
+                    <a href="services-ar.html#captation" class="learn-more">اقرأ المزيد <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners / Reassurance Marquee -->
+    <section class="marquee-section" style="border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); padding: 40px 0; background: rgba(10, 20, 17, 0.2);">
+        <div class="container" style="padding-bottom: 12px;"><h4 style="font-size: 0.85rem; text-transform: uppercase; color: var(--text-muted); letter-spacing: 1px; margin-bottom: 15px; text-align: center;">شركاء يثقون بنا</h4></div>
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <div class="marquee-item"><img src="assets/logos/CCM (Logo).jpg" alt="CCM Logo"></div>
+                <div class="marquee-item"><img src="assets/logos/CINEATLAS Logo.png" alt="Cineatlas Logo"></div>
+                <div class="marquee-item"><img src="assets/logos/ISESCO (Logo).jpg" alt="ISESCO Logo"></div>
+                <div class="marquee-item"><img src="assets/logos/MJCC (Logo).webp" alt="MJCC Logo"></div>
+                <!-- Duplicate for seamless scroll -->
+                <div class="marquee-item"><img src="assets/logos/CCM (Logo).jpg" alt="CCM Logo"></div>
+                <div class="marquee-item"><img src="assets/logos/CINEATLAS Logo.png" alt="Cineatlas Logo"></div>
+                <div class="marquee-item"><img src="assets/logos/ISESCO (Logo).jpg" alt="ISESCO Logo"></div>
+                <div class="marquee-item"><img src="assets/logos/MJCC (Logo).webp" alt="MJCC Logo"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <div class="footer-logo logo-text" style="font-size: 1.5rem;">ATLAS<span>MULTIMEDIA</span></div>
+                <p class="footer-desc">منذ عام 2017، متخصصون في إنتاج حملات الوسائط المتعددة وتنظيم الفعاليات وتصوير الفيديو للمؤسسات والشركات الملتزمة بكفاءة الطاقة.</p>
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/company/hhbhbj/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100066799973840" target="_blank" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com/channel/UCvHi1qz3QXP5QazH4JHUcog" target="_blank" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://x.com/AmpAtlas" target="_blank" class="social-icon" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="footer-title">روابط سريعة</h4>
+                <ul class="footer-links">
+                    <li><a href="index-ar.php">الرئيسية</a></li>
+                    <li><a href="services-ar.php">خدماتنا</a></li>
+                    <li><a href="portfolio-ar.php">أعمالنا</a></li>
+                    <li><a href="about-ar.php">من نحن</a></li>
+                    <li><a href="blog-ar.php">المدونة</a></li>
+                    <li><a href="contact-ar.php">طلب تقدير تكلفة</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-title">مكاتبنا</h4>
+                <div class="office-info" style="margin-bottom: 16px;">
+                    <strong>المقر الرئيسي (الرباط):</strong><br>
+                    الرباط، المغرب
+                </div>
+                <div class="office-info">
+                    <strong>الفرع (الدار البيضاء):</strong><br>
+                    22، شارع فرانس فيل، رقم 28، الواحة، 20103 الدار البيضاء
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 أطلس مالتي ميديا للإنتاج. جميع الحقوق محفوظة.</p>
+            <p>صمم لخدمة الانتقال الطاقي والاستدامة في المغرب.</p>
+        </div>
+    </footer>
+
+    <!-- Core Script -->
+    <script src="app.js"></script>
+</body>
+</html>

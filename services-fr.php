@@ -1,0 +1,236 @@
+<?php require_once 'cms_helper.php'; ?>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Atlas Multimedia Productions</title>
+    <meta name="description" content="Nos services audiovisuels spécialisés : campagnes multimédias, organisation d'événements professionnels et captation live stream au Maroc.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="index-fr.php" class="logo-wrapper">
+                <img src="assets/logos/Logo (AMP).png" alt="Atlas Multimedia Productions" class="logo-img">
+                <div class="logo-text">ATLAS<span>MULTIMEDIA</span></div>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Menu" id="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="index-fr.php">Accueil</a></li>
+                    <li><a href="services-fr.php" class="active">Services</a></li>
+                    <li><a href="portfolio-fr.php">Portfolio</a></li>
+                    <li><a href="about-fr.php">À Propos</a></li>
+                    <li><a href="blog-fr.php">Blog</a></li>
+                    <li><a href="contact-fr.php" class="btn btn-primary" style="padding: 8px 20px; font-size: 0.9rem; color: #050807;">Devis Gratuit</a></li>
+                    <li class="lang-switcher">
+                        <button class="lang-btn" aria-label="Langue"><i class="fa-solid fa-globe"></i> FR <i class="fa-solid fa-chevron-down"></i></button>
+                        <div class="lang-dropdown">
+                            <a href="services.php">English</a>
+                            <a href="services-fr.php">Français</a>
+                            <a href="services-ar.php" class="ar-font">العربية</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Subpage Banner -->
+    <section class="section-padding" style="background: linear-gradient(180deg, var(--bg-surface) 0%, var(--bg-main) 100%); margin-top: var(--header-height); padding: 80px 0 40px 0;">
+        <div class="container text-center">
+            <span class="section-subtitle">Notre Expertise</span>
+            <h1 style="font-size: 3rem; margin-bottom: 16px;">Nos Services Audiovisuels</h1>
+            <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">Nous marions l'excellence technique à la narration d'impact pour amplifier la transition écologique, de l'événementiel au contenu de diffusion.</p>
+        </div>
+    </section>
+
+    <!-- Detailed Services List -->
+    <section class="section-padding" id="campagnes" style="border-top: 1px solid var(--border-color);">
+        <div class="container about-split">
+            <div>
+                <div style="color: var(--primary); font-size: 3rem; margin-bottom: 20px;"><i class="fa-solid fa-photo-film"></i></div>
+                <h2 style="font-size: 2.2rem; margin-bottom: 20px;">Pôle 1 : Production de Campagnes Multimédia</h2>
+                <p style="color: var(--text-muted); margin-bottom: 16px;">Nous concevons des campagnes percutantes adaptées aux nouveaux canaux de communication (OTT, mobile, TV). Notre équipe prend en charge l'intégralité du processus créatif et technique, de l'écriture du scénario à la post-production finale.</p>
+                <ul style="list-style: none; margin-bottom: 30px;">
+                    <li style="margin-bottom: 12px; font-size: 0.95rem; display: flex; align-items: center; gap: 12px; color: var(--text-muted);"><i class="fa-solid fa-check" style="color: var(--primary);"></i> Spots TV & Clips Web promotionnels</li>
+                    <li style="margin-bottom: 12px; font-size: 0.95rem; display: flex; align-items: center; gap: 12px; color: var(--text-muted);"><i class="fa-solid fa-check" style="color: var(--primary);"></i> Contenus réseaux sociaux optimisés (format 9:16 vertical)</li>
+                    <li style="margin-bottom: 12px; font-size: 0.95rem; display: flex; align-items: center; gap: 12px; color: var(--text-muted);"><i class="fa-solid fa-check" style="color: var(--primary);"></i> Films documentaires institutionnels courts</li>
+                    <li style="margin-bottom: 12px; font-size: 0.95rem; display: flex; align-items: center; gap: 12px; color: var(--text-muted);"><i class="fa-solid fa-check" style="color: var(--primary);"></i> Création et production de Podcasts d'entreprise</li>
+                </ul>
+                <a href="contact-fr.html?service=campagne" class="btn btn-primary">Lancer mon projet</a>
+            </div>
+            <div class="glass-card" style="padding: 24px; background: rgba(14,22,18,0.4); text-align: center;">
+                <div style="font-size: 4rem; color: var(--secondary); margin-bottom: 16px;"><i class="fa-solid fa-film"></i></div>
+                <h4 style="margin-bottom: 12px;">Format OTT Ready</h4>
+                <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 20px;">Nos productions respectent les standards d'encodage les plus stricts pour une diffusion fluide sur les plateformes comme YouTube, Netflix et les réseaux sociaux.</p>
+                <div style="display: flex; justify-content: center; gap: 16px; font-size: 1.5rem; color: var(--text-muted);">
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" id="evenements" style="background-color: var(--bg-surface); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+        <div class="container about-split">
+            <div class="glass-card" style="padding: 24px; background: rgba(8,12,10,0.4); text-align: center; order: 2;">
+                <div style="font-size: 4rem; color: var(--secondary); margin-bottom: 16px;"><i class="fa-solid fa-tower-broadcast"></i></div>
+                <h4 style="margin-bottom: 12px;">Live Streaming HD</h4>
+                <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 20px;">Régie mobile multi-caméras intégrée pour diffuser vos webinaires et conférences en direct sur plusieurs plateformes simultanément, sans latence.</p>
+                <div style="display: inline-flex; align-items: center; gap: 8px; font-size: 0.8rem; background: rgba(255, 50, 50, 0.15); color: rgb(255, 80, 80); padding: 4px 12px; border-radius: 4px; font-weight: 700;">
+                    <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: red; animation: pulse 1.5s infinite;"></span> EN DIRECT
+                </div>
+            </div>
+            <div style="order: 1;">
+                <div style="color: var(--primary); font-size: 3rem; margin-bottom: 20px;"><i class="fa-solid fa-people-group"></i></div>
+                <h2 style="font-size: 2.2rem; margin-bottom: 20px;">Pôle 2 : Organisation d'Événements Dédiés</h2>
+                <p style="color: var(--text-muted); margin-bottom: 16px;">Nous concevons des événements professionnels sur-mesure pour rassembler vos parties prenantes. De la logistique à la couverture médiatique complète, nous coordonnons chaque aspect de vos manifestations.</p>
+                <ul style="list-style: none; margin-bottom: 30px;">
+                    <li style="margin-bottom: 12px; font-size: 0.95rem; display: flex; align-items: center; gap: 12px; color: var(--text-muted);"><i class="fa-solid fa-check" style="color: var(--primary);"></i> Salons professionnels de l'efficacité énergétique et durabilité</li>
+                    <li style="margin-bottom: 12px; font-size: 0.95rem; display: flex; align-items: center; gap: 12px; color: var(--text-muted);"><i class="fa-solid fa-check" style="color: var(--primary);"></i> Forums d'entreprise & Conférences sectorielles</li>
+                    <li style="margin-bottom: 12px; font-size: 0.95rem; display: flex; align-items: center; gap: 12px; color: var(--text-muted);"><i class="fa-solid fa-check" style="color: var(--primary);"></i> Organisation de Webinaires en ligne</li>
+                    <li style="margin-bottom: 12px; font-size: 0.95rem; display: flex; align-items: center; gap: 12px; color: var(--text-muted);"><i class="fa-solid fa-check" style="color: var(--primary);"></i> Logistique événementielle, chapiteaux & stands d'exposition</li>
+                </ul>
+                <a href="contact-fr.html?service=evenement" class="btn btn-primary">Planifier un événement</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" id="captation">
+        <div class="container about-split">
+            <div>
+                <div style="color: var(--primary); font-size: 3rem; margin-bottom: 20px;"><i class="fa-solid fa-tower-broadcast"></i></div>
+                <h2 style="font-size: 2.2rem; margin-bottom: 20px;">Pôle 3 : Captation & Contenus Numériques</h2>
+                <p style="color: var(--text-muted); margin-bottom: 16px;">Nous réalisons des enregistrements de haute qualité pour immortaliser vos conférences et documenter vos initiatives. Nous créons également des supports animés éducatifs pour vulgariser vos innovations vertes.</p>
+                <ul style="list-style: none; margin-bottom: 30px;">
+                    <li style="margin-bottom: 12px; font-size: 0.95rem; display: flex; align-items: center; gap: 12px; color: var(--text-muted);"><i class="fa-solid fa-check" style="color: var(--primary);"></i> Web-séries pédagogiques sur la transition écologique</li>
+                    <li style="margin-bottom: 12px; font-size: 0.95rem; display: flex; align-items: center; gap: 12px; color: var(--text-muted);"><i class="fa-solid fa-check" style="color: var(--primary);"></i> Vidéos explicatives (Motion design & infographies animées)</li>
+                    <li style="margin-bottom: 12px; font-size: 0.95rem; display: flex; align-items: center; gap: 12px; color: var(--text-muted);"><i class="fa-solid fa-check" style="color: var(--primary);"></i> Captation de lancements de produits & soirées inaugurales</li>
+                </ul>
+                <a href="contact-fr.html?service=captation" class="btn btn-primary">Demander un devis</a>
+            </div>
+            <div class="glass-card" style="padding: 24px; background: rgba(14,22,18,0.4); text-align: center;">
+                <div style="font-size: 4rem; color: var(--secondary); margin-bottom: 16px;"><i class="fa-solid fa-desktop"></i></div>
+                <h4 style="margin-bottom: 12px;">Studio & Post-Production</h4>
+                <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 20px;">Workstations de montage performantes et studio équipé d'un fond cyclorama vert/blanc pour vos incrustations et enregistrements à Rabat.</p>
+                <span style="font-size: 0.8rem; color: var(--primary); font-weight: 700;"><i class="fa-solid fa-shield-halved"></i> Montage & Étalonnage Cinéma (Uniquement à Rabat)</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipment & Technical Fleet Section -->
+    <section class="section-padding" style="background-color: var(--bg-surface-elevated); border-top: 1px solid var(--border-color);">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 48px;">
+                <span class="section-subtitle">Parc Broadcast & Cinéma</span>
+                <h2 style="font-size: 2.5rem; margin-bottom: 12px;">Équipements Techniques Événementiels & Cinéma</h2>
+                <p style="color: var(--text-muted); max-width: 650px; margin: 0 auto;">Matériel audiovisuel de dernière génération pour des productions institutionnelles, des événements d'envergure et des documentaires sur l'énergie verte au Maroc.</p>
+            </div>
+            <div class="grid-3">
+                <div class="glass-card" style="padding: 24px;">
+                    <div style="color: var(--primary); font-size: 2rem; margin-bottom: 16px;"><i class="fa-solid fa-camera-retro"></i></div>
+                    <h3 style="font-size: 1.25rem; margin-bottom: 12px;">Caméras Cinéma & Drones 4K</h3>
+                    <ul style="list-style: none; color: var(--text-muted); font-size: 0.9rem; line-height: 1.8;">
+                        <li><i class="fa-solid fa-angle-right" style="color: var(--primary); margin-right: 6px;"></i> Systèmes Cinéma ARRI Alexa & RED Dragon</li>
+                        <li><i class="fa-solid fa-angle-right" style="color: var(--primary); margin-right: 6px;"></i> Caméscopes Broadcast 4K Sony & Canon</li>
+                        <li><i class="fa-solid fa-angle-right" style="color: var(--primary); margin-right: 6px;"></i> Flotte de Drones 4K avec Pilotes Certifiés</li>
+                        <li><i class="fa-solid fa-angle-right" style="color: var(--primary); margin-right: 6px;"></i> Stabilisation Gimbals & Steadicam Pro</li>
+                    </ul>
+                </div>
+                <div class="glass-card" style="padding: 24px;">
+                    <div style="color: var(--primary); font-size: 2rem; margin-bottom: 16px;"><i class="fa-solid fa-microphone-lines"></i></div>
+                    <h3 style="font-size: 1.25rem; margin-bottom: 12px;">Sonorisation & Prise de Son</h3>
+                    <ul style="list-style: none; color: var(--text-muted); font-size: 0.9rem; line-height: 1.8;">
+                        <li><i class="fa-solid fa-angle-right" style="color: var(--primary); margin-right: 6px;"></i> Systèmes Sans Fil Multicanaux Sennheiser</li>
+                        <li><i class="fa-solid fa-angle-right" style="color: var(--primary); margin-right: 6px;"></i> Microphones Canon & Cravates HD Rode</li>
+                        <li><i class="fa-solid fa-angle-right" style="color: var(--primary); margin-right: 6px;"></i> Sonorisation Haute Fidélité pour Conférences</li>
+                        <li><i class="fa-solid fa-angle-right" style="color: var(--primary); margin-right: 6px;"></i> Enregistreurs Numériques Multipistes</li>
+                    </ul>
+                </div>
+                <div class="glass-card" style="padding: 24px;">
+                    <div style="color: var(--primary); font-size: 2rem; margin-bottom: 16px;"><i class="fa-solid fa-tv"></i></div>
+                    <h3 style="font-size: 1.25rem; margin-bottom: 12px;">Écrans LED & Mur d'Images</h3>
+                    <ul style="list-style: none; color: var(--text-muted); font-size: 0.9rem; line-height: 1.8;">
+                        <li><i class="fa-solid fa-angle-right" style="color: var(--primary); margin-right: 6px;"></i> Murs LED Modulaires (P2.6, P2.9, P3.9)</li>
+                        <li><i class="fa-solid fa-angle-right" style="color: var(--primary); margin-right: 6px;"></i> Vidéoprojecteurs Haute Luminosité HD</li>
+                        <li><i class="fa-solid fa-angle-right" style="color: var(--primary); margin-right: 6px;"></i> Régie Mobile de Commutation en Direct</li>
+                        <li><i class="fa-solid fa-angle-right" style="color: var(--primary); margin-right: 6px;"></i> Chapiteaux & Stands Événementiels</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners / Reassurance Marquee -->
+    <section class="marquee-section" style="border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); padding: 40px 0; background: rgba(10, 20, 17, 0.2);">
+        <div class="container" style="padding-bottom: 12px;"><h4 style="font-size: 0.85rem; text-transform: uppercase; color: var(--text-muted); letter-spacing: 1px; margin-bottom: 15px; text-align: center;">Ils nous font confiance</h4></div>
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <div class="marquee-item"><img src="assets/logos/CCM (Logo).jpg" alt="CCM Logo"></div>
+                <div class="marquee-item"><img src="assets/logos/CINEATLAS Logo.png" alt="Cineatlas Logo"></div>
+                <div class="marquee-item"><img src="assets/logos/ISESCO (Logo).jpg" alt="ISESCO Logo"></div>
+                <div class="marquee-item"><img src="assets/logos/MJCC (Logo).webp" alt="MJCC Logo"></div>
+                <!-- Duplicate for seamless scroll -->
+                <div class="marquee-item"><img src="assets/logos/CCM (Logo).jpg" alt="CCM Logo"></div>
+                <div class="marquee-item"><img src="assets/logos/CINEATLAS Logo.png" alt="Cineatlas Logo"></div>
+                <div class="marquee-item"><img src="assets/logos/ISESCO (Logo).jpg" alt="ISESCO Logo"></div>
+                <div class="marquee-item"><img src="assets/logos/MJCC (Logo).webp" alt="MJCC Logo"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <div class="footer-logo logo-text" style="font-size: 1.5rem;">ATLAS<span>MULTIMEDIA</span></div>
+                <p class="footer-desc">Depuis 2017, spécialiste de la production de campagnes multimédias, organisation d'événements et captation vidéo pour les institutions et entreprises engagées dans l'efficacité énergétique et durabilité.</p>
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/company/hhbhbj/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100066799973840" target="_blank" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com/channel/UCvHi1qz3QXP5QazH4JHUcog" target="_blank" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://x.com/AmpAtlas" target="_blank" class="social-icon" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="footer-title">Liens Rapides</h4>
+                <ul class="footer-links">
+                    <li><a href="index-fr.php">Accueil</a></li>
+                    <li><a href="services-fr.php">Services</a></li>
+                    <li><a href="portfolio-fr.php">Portfolio</a></li>
+                    <li><a href="about-fr.php">À Propos</a></li>
+                    <li><a href="blog-fr.php">Blog</a></li>
+                    <li><a href="contact-fr.php">Contact & Devis</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-title">Nos Implantations</h4>
+                <div class="office-info" style="margin-bottom: 16px;">
+                    <strong>Siège Social (Rabat) :</strong><br>
+                    Rabat, Morocco
+                </div>
+                <div class="office-info">
+                    <strong>Bureau Commercial (Casablanca) :</strong><br>
+                    Casablanca, Morocco
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Atlas Multimedia Productions. Tous droits réservés.</p>
+            <p>Conçu pour la Transition Énergétique et Durabilité au Maroc.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

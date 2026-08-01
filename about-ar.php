@@ -1,0 +1,250 @@
+<?php require_once 'cms_helper.php'; ?>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>من نحن - أطلس مالتي ميديا للإنتاج</title>
+    <meta name="description" content="متخصصون في الإنتاج السمعي البصري للمؤسسات والفعاليات في قطاع الطاقة المتجددة بالمغرب. مكاتبنا بالرباط والدار البيضاء.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="index-ar.php" class="logo-wrapper">
+                <img src="assets/logos/Logo (AMP).png" alt="AMP Logo" class="logo-img" onerror="this.style.display='none';">
+                <div class="logo-text">ATLAS<span>MULTIMEDIA</span></div>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Menu" id="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="index-ar.php">الرئيسية</a></li>
+                    <li><a href="services-ar.php">خدماتنا</a></li>
+                    <li><a href="portfolio-ar.php">أعمالنا</a></li>
+                    <li><a href="about-ar.php" class="active">من نحن</a></li>
+                    <li><a href="blog-ar.php">المدونة</a></li>
+                    <li><a href="contact-ar.php" class="btn btn-primary" style="padding: 8px 20px; font-size: 0.9rem; color: #050807;">طلب تقدير تكلفة</a></li>
+                    <li class="lang-switcher">
+                        <button class="lang-btn" aria-label="اللغة"><i class="fa-solid fa-globe"></i> AR <i class="fa-solid fa-chevron-down"></i></button>
+                        <div class="lang-dropdown">
+                            <a href="about.php">English</a>
+                            <a href="about-fr.php">Français</a>
+                            <a href="about-ar.php" class="ar-font">العربية</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="section-padding" style="background: linear-gradient(180deg, var(--bg-surface) 0%, var(--bg-main) 100%); margin-top: var(--header-height); padding: 80px 0 40px 0;">
+        <div class="container text-center">
+            <span class="section-subtitle">وكالتنا</span>
+            <h1 style="font-size: 3rem; margin-bottom: 16px;">من نحن</h1>
+            <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">خبرة 8 سنوات في إنتاج الحملات المؤثرة وتنظيم المنتديات الكبرى في المغرب.</p>
+        </div>
+    </section>
+
+    <!-- Our Journey Split Section -->
+    <section class="section-padding" style="border-top: 1px solid var(--border-color);">
+        <div class="container about-split">
+            <div>
+                <span class="section-subtitle">مسيرتنا</span>
+                <h2 style="font-size: 2.2rem; margin-bottom: 20px;">الريادة السمعية البصرية لمستقبل مستدام</h2>
+                <p style="color: var(--text-muted); margin-bottom: 20px;">
+                    منذ عام 2017، تنتج أطلس مالتي ميديا المحتوى السمعي البصري للمؤسسات، والإعلانات، والبودكاست. كما نقوم بتنسيق الفعاليات المهنية، والبث المباشر، والمؤتمرات لعملاء محليين ودوليين.
+                </p>
+                <p style="color: var(--text-muted); margin-bottom: 20px;">
+                    كمتخصصين في المجال السمعي البصري للمؤسسات والإدارات، نتواجد بالرباط مما يمنحنا معرفة عميقة بالبروتوكولات الرسمية، وتصاريح التصوير والأذونات الأمنية في الوزارات والهيئات الحكومية والمساحات العامة.
+                </p>
+                <p style="color: var(--text-muted); margin-bottom: 30px;">
+                    من خلال مكاتبنا في كل من الرباط والدار البيضاء، نضمن تغطية ممتازة في كلا المدينتين للوكالات والعملاء الذين ينظمون مؤتمرات صحفية أو فعاليات متعددة المراحل في نفس الوقت.
+                </p>
+            </div>
+            <div class="about-img-box" style="border: 1px solid var(--border-color); display: flex; flex-direction: column; justify-content: center; padding: 24px; background: var(--bg-surface); gap: 24px; border-radius: var(--border-radius);">
+                <div style="border-radius: 8px; overflow: hidden; border: 1px solid var(--border-color); aspect-ratio: 16/9; background: #000;">
+                    <video src="assets/videos/AMP (Logo dynamique).mp4" autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;"></video>
+                </div>
+                <div>
+                    <h3 style="color: var(--primary); margin-bottom: 12px; font-size: 1.3rem;"><i class="fa-solid fa-map-pin"></i> ميزة التواجد في مدينتين</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 16px;">
+                        يتيح لنا وجود فرق عمل ميدانية في الرباط (العاصمة الإدارية) والدار البيضاء (المركز الاقتصادي) تنسيق التغطيات اللوجستية وتلبية الاحتياجات في كلا القطبين بكفاءة عالية.
+                    </p>
+                    <div style="border-top: 1px solid var(--border-color); padding-top: 16px; display: flex; justify-content: space-around; text-align: center;">
+                        <div>
+                            <h4 style="color: #fff; font-size: 1.1rem;">الرباط</h4>
+                            <span style="font-size: 0.75rem; color: var(--text-muted);">المقر الرئيسي</span>
+                        </div>
+                        <div style="border-left: 1px solid var(--border-color); height: 30px;"></div>
+                        <div>
+                            <h4 style="color: #fff; font-size: 1.1rem;">الدار البيضاء</h4>
+                            <span style="font-size: 0.75rem; color: var(--text-muted);">المكتب التجاري</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Material Inventory with Tabs -->
+    <section class="section-padding" style="background-color: var(--bg-surface); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-subtitle">ترسانتنا التقنية</span>
+                <h2 class="section-title">معدات إنتاج وبث متطورة</h2>
+                <p class="section-desc">مخزون تقني متميز لتلبية كافة المتطلبات الإبداعية والمسرحية.</p>
+            </div>
+
+            <!-- Tab Buttons -->
+            <div class="equipment-tabs" style="display: flex; justify-content: center; margin-bottom: 40px;">
+                <button class="filter-btn active" data-target="cameras">الكاميرات والعدسات</button>
+                <button class="filter-btn" data-target="audio-lum">الصوت والإضاءة</button>
+                <button class="filter-btn" data-target="diffusion">العرض والمسرح</button>
+                <button class="filter-btn" data-target="studios">الاستوديو والمونتاج</button>
+            </div>
+
+            <!-- Tab Contents -->
+            <!-- Cameras -->
+            <div class="eq-content" id="cameras">
+                <div class="eq-grid">
+                    <div class="eq-card">
+                        <h4>سينما وبث مباشر</h4>
+                        <ul>
+                            <li>مجموعة Arri Alexa، المرجع العالمي لجودة الصور السينمائية</li>
+                            <li>RED Dragon للإنتاج فائق الدقة Ultra-HD</li>
+                            <li>كاميرات Sony و Canon 4K الاحترافية للبث التلفزيوني</li>
+                        </ul>
+                    </div>
+                    <div class="eq-card">
+                        <h4>العدسات والحوامل</h4>
+                        <ul>
+                            <li>مجموعة كاملة من عدسات السينما الزووم والثابتة</li>
+                            <li>أنظمة التثبيت Steadicam ومحاور الحركة Gimbals</li>
+                            <li>حوامل ثلاثية ثقيلة، ورافعات كاميرا، وأنظمة سكك travelling</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Audio & Lighting -->
+            <div class="eq-content" id="audio-lum" style="display: none;">
+                <div class="eq-grid">
+                    <div class="eq-card">
+                        <h4>أنظمة الصوت والميكروفونات</h4>
+                        <ul>
+                            <li>أنظمة ميكروفونات Sennheiser اللاسلكية</li>
+                            <li>ميكروفونات Rode الموجهة عالية الدقة</li>
+                            <li>لوحات تحكم وميكسرات صوتية للمهرجانات والندوات</li>
+                        </ul>
+                    </div>
+                    <div class="eq-card">
+                        <h4>إضاءة الاستوديو والبلاتوه</h4>
+                        <ul>
+                            <li>كشافات إضاءة سينمائية من ARRI</li>
+                            <li>ألواح LED متغيرة الشدة وأطقم فلاش Godox SK400 II</li>
+                            <li>مشتتات الإضاءة، السوفت بوكس، وعواكس الضوء المتعددة</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Display & Stage -->
+            <div class="eq-content" id="diffusion" style="display: none;">
+                <div class="eq-grid">
+                    <div class="eq-card">
+                        <h4>شاشات LED العملاقة</h4>
+                        <ul>
+                            <li>شاشات LED جدارية بمختلف درجات الوضوح (P2.6, P2.9, P3.9, P4.8)</li>
+                            <li>سطوع فائق الوضوح ومقروء تحت أشعة الشمس المباشرة</li>
+                            <li>تركيبات مستوية أو منحنية تتكيف مع أي مساحة عرض</li>
+                        </ul>
+                    </div>
+                    <div class="eq-card">
+                        <h4>المسرح واللوجستيات</h4>
+                        <ul>
+                            <li>خيام مهنية وهياكل ألومنيوم للمعارض والوقوف</li>
+                            <li>منصات خطابة، مسارح خشبية وهياكل خلفية</li>
+                            <li>مولدات كهربائية احتياطية لضمان الاستقلالية الطاقية</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Studios & Editing -->
+            <div class="eq-content" id="studios" style="display: none;">
+                <div class="eq-grid">
+                    <div class="eq-card">
+                        <h4>مرحلة ما بعد الإنتاج</h4>
+                        <ul>
+                            <li>محطات عمل مونتاج وتلوين عالية الأداء</li>
+                            <li>برامج احترافية معتمدة (DaVinci Resolve, Premiere Pro)</li>
+                            <li>خطوط تسليم سريعة وأرشفة سحابية آمنة للمشاريع</li>
+                        </ul>
+                    </div>
+                    <div class="eq-card">
+                        <h4>الاستوديوهات الميدانية</h4>
+                        <ul>
+                            <li>استوديوهات تصوير مجهزة بالكامل في الرباط والدار البيضاء</li>
+                            <li>خلفية كروما خضراء وبيضاء لأعمال الدمج البصري</li>
+                            <li>غرف معزولة صوتيًا لتسجيل البودكاست والتعليق الصوتي</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <div class="footer-logo logo-text" style="font-size: 1.5rem;">ATLAS<span>MULTIMEDIA</span></div>
+                <p class="footer-desc">منذ عام 2017، متخصصون في إنتاج حملات الوسائط المتعددة وتنظيم الفعاليات وتصوير الفيديو للمؤسسات والشركات الملتزمة بكفاءة الطاقة.</p>
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/company/hhbhbj/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100066799973840" target="_blank" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com/channel/UCvHi1qz3QXP5QazH4JHUcog" target="_blank" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://x.com/AmpAtlas" target="_blank" class="social-icon" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="footer-title">روابط سريعة</h4>
+                <ul class="footer-links">
+                    <li><a href="index-ar.php">الرئيسية</a></li>
+                    <li><a href="services-ar.php">خدماتنا</a></li>
+                    <li><a href="portfolio-ar.php">أعمالنا</a></li>
+                    <li><a href="about-ar.php">من نحن</a></li>
+                    <li><a href="blog-ar.php">المدونة</a></li>
+                    <li><a href="contact-ar.php">طلب تقدير تكلفة</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-title">مكاتبنا</h4>
+                <div class="office-info" style="margin-bottom: 16px;">
+                    <strong>المقر الرئيسي (الرباط):</strong><br>
+                    الرباط، المغرب
+                </div>
+                <div class="office-info">
+                    <strong>المكتب التجاري (الدار البيضاء):</strong><br>
+                    الدار البيضاء، المغرب
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 أطلس مالتي ميديا للإنتاج. جميع الحقوق محفوظة.</p>
+            <p>صمم لخدمة الانتقال الطاقي والاستدامة في المغرب.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

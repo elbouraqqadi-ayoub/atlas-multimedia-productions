@@ -1,0 +1,209 @@
+<?php require_once 'cms_helper.php'; ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog & News - Atlas Multimedia Productions</title>
+    <meta name="description" content="Read our articles on video marketing and green energy news in Morocco. Boost your SEO and your sustainable impact.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.php" class="logo-wrapper">
+                <img src="assets/logos/Logo (AMP).png" alt="AMP Logo" class="logo-img" onerror="this.style.display='none';">
+                <div class="logo-text">ATLAS<span>MULTIMEDIA</span></div>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Menu" id="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="services.php">Services</a></li>
+                    <li><a href="portfolio.php">Portfolio</a></li>
+                    <li><a href="about.php">About Us</a></li>
+                    <li><a href="blog.php" class="active">Blog</a></li>
+                    <li><a href="contact.php" class="btn btn-primary" style="padding: 8px 20px; font-size: 0.9rem; color: #050807;">Free Quote</a></li>
+                    <li class="lang-switcher">
+                        <button class="lang-btn" aria-label="Language"><i class="fa-solid fa-globe"></i> EN <i class="fa-solid fa-chevron-down"></i></button>
+                        <div class="lang-dropdown">
+                            <a href="blog.php">English</a>
+                            <a href="blog-fr.php">Français</a>
+                            <a href="blog-ar.php" class="ar-font">العربية</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="section-padding" style="background: linear-gradient(180deg, var(--bg-surface) 0%, var(--bg-main) 100%); margin-top: var(--header-height); padding: 80px 0 40px 0;">
+        <div class="container text-center">
+            <span class="section-subtitle">Thematic Blog</span>
+            <h1 style="font-size: 3rem; margin-bottom: 16px;">Audiovisual & Energy Transition & Sustainability</h1>
+            <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">Insights into video marketing trends and clean energy developments in the Kingdom of Morocco.</p>
+        </div>
+    </section>
+
+    <!-- Blog Articles Grid -->
+    <section class="section-padding" style="border-top: 1px solid var(--border-color);">
+        <div class="container">
+            <div class="blog-grid">
+                
+                <!-- DYNAMIC CMS BLOGS -->
+                <?php
+                $cms_blogs = cms_blog('en');
+                foreach ($cms_blogs as $b):
+                ?>
+                <a href="blog-article-1.php?id=<?= $b['id'] ?>" class="glass-card blog-card">
+                    <div class="blog-img-wrapper">
+                        <img src="<?= htmlspecialchars($b['image_url']) ?>" alt="<?= htmlspecialchars($b['title']) ?>">
+                        <div class="blog-category"><?= htmlspecialchars($b['category']) ?></div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date"><i class="fa-regular fa-calendar-days"></i> <?= date('M j, Y', strtotime($b['created_at'])) ?></div>
+                        <h3 class="blog-title"><?= htmlspecialchars($b['title']) ?></h3>
+                        <p class="blog-desc"><?= htmlspecialchars($b['excerpt']) ?></p>
+                        <span class="btn-text">Read Article <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </a>
+                <?php endforeach; ?>
+                <!-- END DYNAMIC CMS BLOGS -->
+
+                
+                <!-- Article 1 (Morocco's Energy Transition & Sustainability) -->
+                <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
+                    <div class="blog-image">
+                        <img src="assets/images/energy_transition_cover.png" alt="Morocco Energy Transition & Sustainability" itemprop="image" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="blog-info">
+                        <div class="blog-date" itemprop="datePublished" content="2026-09-01"><i class="fa-regular fa-calendar-days"></i> Sept 1, 2026 &bull; <span style="color: var(--primary);">Energy Transition & Sustainability</span></div>
+                        <h3 class="blog-title" itemprop="headline">The Real Picture Behind Morocco's Energy Transition & Sustainability</h3>
+                        <p class="blog-excerpt" itemprop="description">Beyond the headlines of 46% installed renewable capacity, discover the integration challenges and decentralization opportunities for green energy in Morocco.</p>
+                        <a href="blog-article-1.php" class="blog-read-more">Read article <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 2 (Axe 1 - Marketing) -->
+                <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
+                    <div class="blog-image">
+                        <img src="assets/images/blog_vertical_marketing.png" alt="Vertical Marketing" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="blog-info">
+                        <div class="blog-date" itemprop="datePublished" content="2026-06-15"><i class="fa-regular fa-calendar-days"></i> June 15, 2026 &bull; <span style="color: var(--primary);">Video Marketing</span></div>
+                        <h3 class="blog-title" itemprop="headline">Why the 9:16 Vertical Format Dominates B2B Green Marketing</h3>
+                        <p class="blog-excerpt" itemprop="description">With the rise of TikTok, Reels, and YouTube Shorts, ClimateTech companies must adapt their messages to mobile screens to maximize their visibility.</p>
+                        <a href="#" class="blog-read-more">Read article <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 3 (Axe 2 - Energies) -->
+                <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
+                    <div class="blog-image">
+                        <img src="assets/images/blog_energy_efficiency.png" alt="Energy Efficiency & Sustainability Regulations" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="blog-info">
+                        <div class="blog-date" itemprop="datePublished" content="2026-06-02"><i class="fa-regular fa-calendar-days"></i> June 2, 2026 &bull; <span style="color: var(--primary);">Renewable Energy</span></div>
+                        <h3 class="blog-title" itemprop="headline">Morocco 2026: Key Energy Efficiency & Sustainability Regulations for SMEs</h3>
+                        <p class="blog-excerpt" itemprop="description">The Kingdom is accelerating its industrial decarbonization requirements. Learn how to document your energy efficiency & sustainability efforts and attract green subsidies.</p>
+                        <a href="#" class="blog-read-more">Read article <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 4 (Axe 1 - Streaming) -->
+                <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
+                    <div class="blog-image">
+                        <img src="assets/images/blog_live_stream.png" alt="Live Stream Conference" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="blog-info">
+                        <div class="blog-date" itemprop="datePublished" content="2026-05-20"><i class="fa-regular fa-calendar-days"></i> May 20, 2026 &bull; <span style="color: var(--primary);">Control Room & Live</span></div>
+                        <h3 class="blog-title" itemprop="headline">How to Successfully Live Stream Your Smart City Conference</h3>
+                        <p class="blog-excerpt" itemprop="description">Multi-camera coordination, direct presentation feed integration, and real-time interactivity. Technical best practices to engage your remote audience.</p>
+                        <a href="#" class="blog-read-more">Read article <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 5 (Axe 2 - Transition) -->
+                <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
+                    <div class="blog-image">
+                        <img src="assets/images/blog_documentary.png" alt="Impact Documentaries" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="blog-info">
+                        <div class="blog-date" itemprop="datePublished" content="2026-05-08"><i class="fa-regular fa-calendar-days"></i> May 8, 2026 &bull; <span style="color: var(--primary);">Renewable Energy</span></div>
+                        <h3 class="blog-title" itemprop="headline">The Role of Impact Documentaries in Moroccan Public Awareness</h3>
+                        <p class="blog-excerpt" itemprop="description">Putting a human face on green energy projects. Storytelling techniques to accelerate the public adoption of solar and wind energy.</p>
+                        <a href="#" class="blog-read-more">Read article <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- RSS Newsletter Subscription Form -->
+            <div class="glass-card text-center" style="max-width: 700px; margin: 60px auto 0 auto; border-color: rgba(0,208,120,0.15);">
+                <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 16px;"><i class="fa-solid fa-square-rss"></i></div>
+                <h3 style="margin-bottom: 8px;">Subscribe to Our Industry Watch</h3>
+                <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 24px;">Receive twice a month our curated articles, regulatory updates on the energy transition & sustainability, and video marketing tips.</p>
+                <form style="display: flex; gap: 12px; flex-wrap: wrap; justify-content: center;" onsubmit="event.preventDefault(); alert('Thank you for subscribing!'); this.reset();">
+                    <input type="email" placeholder="Your email address" required style="padding: 12px 20px; border-radius: 30px; border: 1px solid var(--border-color); background: rgba(255,255,255,0.02); color: #fff; width: 100%; max-width: 320px; outline: none;">
+                    <button type="submit" class="btn btn-primary" style="padding: 12px 28px;">Subscribe</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <div class="footer-logo logo-text" style="font-size: 1.5rem;">ATLAS<span>MULTIMEDIA</span></div>
+                <p class="footer-desc">Since 2017, specializing in producing multimedia campaigns, event organization, and video captation for institutions and companies committed to energy efficiency & sustainability.</p>
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/company/hhbhbj/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100066799973840" target="_blank" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com/channel/UCvHi1qz3QXP5QazH4JHUcog" target="_blank" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://x.com/AmpAtlas" target="_blank" class="social-icon" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="services.php">Services</a></li>
+                    <li><a href="portfolio.php">Portfolio</a></li>
+                    <li><a href="about.php">About Us</a></li>
+                    <li><a href="blog.php">Blog</a></li>
+                    <li><a href="contact.php">Contact & Quote</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-title">Our Locations</h4>
+                <div class="office-info" style="margin-bottom: 10px;">
+                    <strong>Head Office:</strong> Rabat, Morocco
+                </div>
+                <div class="office-info" style="margin-bottom: 10px;">
+                    <strong>Branch Office:</strong> Casablanca, Morocco
+                </div>
+                <div class="office-info">
+                    <strong>Direct Email:</strong><br>
+                    <a href="mailto:h.barakat00@gmail.com" style="color: var(--primary);">h.barakat00@gmail.com</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Atlas Multimedia Productions. All rights reserved.</p>
+            <p>Designed for the Energy Transition & Sustainability in Morocco.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
