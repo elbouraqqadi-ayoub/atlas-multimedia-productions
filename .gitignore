@@ -1,0 +1,18 @@
+# Exclude references documents and documentation
+references/
+*.docx
+*.pdf
+
+# Exclude local database and configurations
+quotes.db
+content.db
+
+# Exclude IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Exclude all videos to prevent large file pushes
+assets/videos/
+frontend/assets/videos/
