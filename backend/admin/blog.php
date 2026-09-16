@@ -52,7 +52,7 @@ $articles = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <option value="fr">French</option>
                     <option value="ar">Arabic</option>
                 </select>
-                <input type="text" name="image_url" placeholder="Image URL (e.g. assets/images/blog1.jpg)" class="form-control" style="margin-bottom: 10px; width: 100%;">
+                <input type="text" name="image_url" placeholder="Image URL (e.g. references/frontend/assets/images/blog1.jpg)" class="form-control" style="margin-bottom: 10px; width: 100%;">
                 <textarea name="excerpt" placeholder="Short Excerpt..." class="form-control" style="margin-bottom: 10px; width: 100%; min-height: 60px;"></textarea>
                 <textarea name="content" placeholder="Full Article Content (HTML allowed)..." class="form-control" style="margin-bottom: 10px; width: 100%; min-height: 150px;"></textarea>
                 <button type="submit" class="btn btn-primary" style="width: 100%;">Publish Article</button>

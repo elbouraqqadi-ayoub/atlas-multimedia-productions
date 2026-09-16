@@ -51,7 +51,7 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <option value="fr">French</option>
                     <option value="ar">Arabic</option>
                 </select>
-                <input type="text" name="image_url" placeholder="Image URL (e.g. assets/images/portfolio/proj1.jpg)" class="form-control" style="margin-bottom: 10px; width: 100%;">
+                <input type="text" name="image_url" placeholder="Image URL (e.g. references/frontend/assets/images/portfolio/proj1.jpg)" class="form-control" style="margin-bottom: 10px; width: 100%;">
                 <textarea name="description" placeholder="Description..." class="form-control" style="margin-bottom: 10px; width: 100%; min-height: 80px;"></textarea>
                 <button type="submit" class="btn btn-primary" style="width: 100%;">Add Project</button>
             </form>

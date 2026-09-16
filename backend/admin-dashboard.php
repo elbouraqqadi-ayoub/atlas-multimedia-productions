@@ -89,7 +89,7 @@ if ($loggedIn) {
     <header>
         <div class="container nav-container">
             <a href="../frontend/index.html" class="logo-wrapper">
-                <img src="../frontend/assets/logos/Logo (AMP).png" alt="Atlas Multimedia Productions" class="logo-img">
+                <img src="../references/frontend/assets/logos/Logo (AMP).png" alt="Atlas Multimedia Productions" class="logo-img">
                 <div class="logo-text">ATLAS<span>MULTIMEDIA</span></div>
             </a>
             <nav>
