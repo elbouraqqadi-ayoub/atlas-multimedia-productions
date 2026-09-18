@@ -157,7 +157,7 @@ function setupCustomChatbot() {
                 "expertise": "Since 2017, we have produced premium AV content. Today, we specialize in translating complex green tech, engineering achievements, and energy efficiency & sustainability data into human, high-impact visual stories."
             },
             greetResponse: "Hello! I am your AMP Assistant. Feel free to choose one of the questions below or ask me any details. You can also type **quote** to begin a conversational estimate builder.",
-            unknown: "I'm sorry, I didn't quite catch that. Please select one of the suggested questions below, or contact us directly at contact@atlas-multimedia.com!",
+            unknown: "I'm sorry, I didn't quite catch that. Please select one of the suggested questions below, or contact us directly at barakat@atlasmultimedia.com!",
             quoteStart: "Let's build your quote right here! 📋<br><br>First, **what type of project** are you planning?<br>1. **Campaign** (Ads, Promo videos, corporate podcasts)<br>2. **Event** (Professional conferences, forums, stands)<br>3. **Live** (Multi-camera streaming & broadcast)<br>4. **Post-Prod** (Color grading, editing, cyclorama studio)",
             quoteStepLocation: "Got it! **Where** will the project take place?<br>*(e.g., Rabat, Casablanca, other Moroccan city, or international)*",
             quoteStepBudget: "Understood. What is your **estimated budget**?<br>1. **Under 20,000 MAD**<br>2. **20,000 - 50,000 MAD**<br>3. **50,000 - 150,000 MAD**<br>4. **Over 150,000 MAD**",
@@ -182,7 +182,7 @@ function setupCustomChatbot() {
                 "expertise": "Spécialiste de la production audiovisuelle institutionnelle depuis 8 ans, nous comblons le fossé entre l'ingénierie verte et l'engagement humain en concevant des récits visuels captivants."
             },
             greetResponse: "Bonjour ! Je suis votre assistant AMP. Vous pouvez me poser des questions sur nos services, m'indiquer vos besoins, ou taper **devis** pour lancer notre assistant interactif.",
-            unknown: "Désolé, je n'ai pas bien compris. N'hésitez pas à cliquer sur une des questions suggérées ci-dessous ou à nous contacter à contact@atlas-multimedia.com !",
+            unknown: "Désolé, je n'ai pas bien compris. N'hésitez pas à cliquer sur une des questions suggérées ci-dessous ou à nous contacter à barakat@atlasmultimedia.com !",
             quoteStart: "Créons votre devis ici ! 📋<br><br>Tout d'abord, **quel type de projet** planifiez-vous ?<br>1. **Campagne** (Publicités, vidéos promo, podcasts)<br>2. **Événement** (Conférences, salons, logistique)<br>3. **Direct** (Bureaux de régie, live stream multi-caméras)<br>4. **Post-Prod** (Montage, DaVinci, studio cyclo (Exclusivement à Rabat))",
             quoteStepLocation: "Reçu ! **Où** se déroulera le projet ?<br>*(ex: Rabat, Casablanca, autre ville au Maroc, international)*",
             quoteStepBudget: "Compris. Quel est votre **budget estimatif** ?<br>1. **Moins de 20 000 DH**<br>2. **20 000 - 50 000 DH**<br>3. **50 000 - 150 000 DH**<br>4. **Plus de 150 000 DH**",
@@ -207,7 +207,7 @@ function setupCustomChatbot() {
                 "expertise": "منذ 2017، نتخصص في الإنتاج السمعي البصري للمؤسسات. اليوم، نكرس خبرتنا لتبسيط مشاريع الطاقة المتجددة ونجاعة الطاقة وتحويل البيانات المعقدة إلى قصص مرئية مؤثرة."
             },
             greetResponse: "مرحباً! أنا مساعد أطلس للإنتاج. يسعدني الإجابة على استفساراتكم أو مساعدتكم في حساب تكلفة المشروع بمجرد كتابة **تقدير**.",
-            unknown: "عذراً، لم أفهم ذلك تماماً. يرجى اختيار أحد الأسئلة المقترحة أدناه، أو التواصل معنا مباشرة عبر البريد contact@atlas-multimedia.com!",
+            unknown: "عذراً، لم أفهم ذلك تماماً. يرجى اختيار أحد الأسئلة المقترحة أدناه، أو التواصل معنا مباشرة عبر البريد barakat@atlasmultimedia.com!",
             quoteStart: "دعنا نحدد تقدير التكلفة هنا! 📋<br><br>أولاً، **ما هو نوع المشروع** الذي تخطط له؟<br>1. **حملة** (إعلانات، بودكاست، فيديوهات ترويجية)<br>2. **فعالية** (مؤتمرات، معارض، لوجستيات)<br>3. **بث مباشر** (تصوير متعدد الكاميرات وبث حي)<br>4. **استوديو** (مونتاج، تلوين سينمائي، استوديو كروما)",
             quoteStepLocation: "مفهوم! **أين** سيتم تنفيذ المشروع؟<br>*(مثال: الرباط، الدار البيضاء، مدينة مغربية أخرى، أو خارج المغرب)*",
             quoteStepBudget: "حسناً. ما هي **الميزانية التقديرية**؟<br>1. **أقل من 20,000 درهم**<br>2. **20,000 - 50,000 درهم**<br>3. **50,000 - 150,000 درهم**<br>4. **أكثر من 150,000 درهم**",

@@ -51,15 +51,15 @@ try {
         ':data' => $dataJson
     ]);
     
-    // Simulate sending email to aelbouraqqadi@gmail.com
-    $to = "aelbouraqqadi@gmail.com";
+    // Send email to barakat@atlasmultimedia.com
+    $to = "barakat@atlasmultimedia.com";
     $subject = "New Blog Reader Registered";
     $emailBody = "A new reader has registered to unlock a blog article.\n\nType: $type\n\nDetails:\n";
     foreach ($input as $key => $val) {
         $emailBody .= ucfirst($key) . ": $val\n";
     }
     
-    $headers = "From: webmaster@atlas-multimedia.com\r\n";
+    $headers = "From: barakat@atlasmultimedia.com\r\n";
     @mail($to, $subject, $emailBody, $headers);
     
     echo json_encode([

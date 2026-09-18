@@ -1,11 +1,13 @@
-# Exclude references documents and documentation
+# Exclude reference documents and documentation
 references/
 *.docx
 *.pdf
 
-# Exclude local database and configurations
-quotes.db
-content.db
+# Exclude local SQLite database files
+backend/quotes.db
+backend/readers.db
+backend/content.db
+*.db
 
 # Exclude IDE and OS files
 .vscode/
@@ -13,6 +15,5 @@ content.db
 .DS_Store
 Thumbs.db
 
-# Exclude all videos to prevent large file pushes
+# Exclude large videos
 assets/videos/
-frontend/assets/videos/

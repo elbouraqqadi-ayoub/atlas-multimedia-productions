@@ -89,10 +89,10 @@ try {
     $refId = "AMP-" . date("Ymd") . "-" . str_pad($lastId, 4, "0", STR_PAD_LEFT);
     
     // Send quote notification email
-    $to = "aelbouraqqadi@gmail.com";
+    $to = "barakat@atlasmultimedia.com";
     $subject = "New Quote Request: $refId";
     $emailBody = "Reference ID: $refId\nSource: $source\nName: $name\nEmail: $email\nPhone: $phone\nCompany: $company\nProject Type: $project_type\nLocation: $location\nBudget: $budget\nDate: $date\nDescription: $description\n";
-    $headers = "From: webmaster@atlas-multimedia.com\r\nReply-To: $email";
+    $headers = "From: barakat@atlasmultimedia.com\r\nReply-To: $email";
     @mail($to, $subject, $emailBody, $headers);
     
     echo json_encode([
